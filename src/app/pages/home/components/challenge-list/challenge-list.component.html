@@ -1,0 +1,32 @@
+<section >
+    <div class="d-flex flex-column align-items-center">
+        <h1 >WHAT DO YOU THINK ABOUT YOURSELF</h1>
+        <H2 >WHAT HAVE YOU BEEN DOING TO GOT YOUR DREAMS</H2>
+    
+        <div class="mb-3">
+            <button *ngIf="isLogin; else isNotLogin" >Let's move to you channel</button>
+            <ng-template #isNotLogin>
+                <button (click)="navigateToLogin()" type="button" class="btn btn-info font-weight-bolder">Let's me help you - click here!</button>
+            </ng-template>
+        </div>
+    </div>
+   
+    <section>
+        <div class="challenge-items d-flex justify-content-between">
+        <div class="flex-1" (click)="navigateToChallengeDetail()">
+            <img src="https://images.elipsport.vn/anh-seo-tin-tuc/2020/12/10/healthy-la-gi-1.jpg"/>
+            <p>Image description</p>
+        </div>
+        <div class="flex-1">
+            <img src="https://images.elipsport.vn/anh-seo-tin-tuc/2020/12/10/healthy-la-gi-1.jpg"/>
+            <p>Image description</p>
+        </div>
+        <div class="flex-1">
+            <img src="https://images.elipsport.vn/anh-seo-tin-tuc/2020/12/10/healthy-la-gi-1.jpg"/>
+            <p>Image description</p>
+        </div>
+    </div>
+    </section>
+
+</section>
+

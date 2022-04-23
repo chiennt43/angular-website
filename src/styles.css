@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./assets/css/Utilities/_dflex.scss";
+@import "./assets/css/Utilities/_spacing.scss";
 
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -293,23 +296,6 @@ svg#clouds {
     visibility: hidden;
   }
 }
-
-/* common style */
-
 .d-flex {
-  display: flex;
-}
-.flex-1 {
-  flex: 1;
-}
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.padding-20 {
-  padding: 20px;
+  display: flex !important;
 }
